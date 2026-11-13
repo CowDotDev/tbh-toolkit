@@ -14,7 +14,7 @@ export default tseslint.config(
     rules: { 'react-hooks/rules-of-hooks': 'error', 'react-hooks/exhaustive-deps': 'warn' },
   },
   {
-    files: ['src/main/**/*.ts', 'src/preload/**/*.ts', 'scripts/**/*.ts', 'tests/**/*.ts', '*.ts', '*.mjs'],
+    files: ['src/main/**/*.ts', 'src/preload/**/*.ts', 'scripts/**/*.{ts,mjs}', 'tests/**/*.ts', '*.ts', '*.mjs'],
     languageOptions: { globals: globals.node },
   },
 );

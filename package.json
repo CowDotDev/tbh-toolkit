@@ -14,9 +14,12 @@
     "node": ">=20"
   },
   "scripts": {
+    "prestart": "node scripts/ensure-electron.mjs",
     "start": "electron-vite preview",
+    "predev": "node scripts/ensure-electron.mjs",
     "dev": "electron-vite dev",
     "build": "electron-vite build",
+    "prepreview": "node scripts/ensure-electron.mjs",
     "preview": "electron-vite preview",
     "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
     "lint": "eslint .",
