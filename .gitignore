@@ -1,0 +1,14 @@
+node_modules/
+out/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+
+# Never commit game saves or extracted game data
+*.es3
+*.es3.bak
+*.assets
+*.bundle
+/local/
+*.tsbuildinfo
